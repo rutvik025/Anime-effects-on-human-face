@@ -19,24 +19,7 @@ It leverages **pretrained ONNX models** (Hayao, Paprika, Shinkai) to convert rea
 
 ---
 
-## 🗂️ Project Structure  
 
-eeproject/
-│
-├── streamlit_app.py # Main Streamlit application
-├── requirements.txt # Dependencies
-├── app/
-│ ├── models/ # ONNX pretrained AnimeGANv2 models
-│ │ ├── AnimeGANv2_Hayao.onnx
-│ │ ├── AnimeGANv2_Paprika.onnx
-│ │ └── AnimeGANv2_Shinkai.onnx
-│ ├── services/ # Core service modules
-│ │ ├── avatar_model.py
-│ │ ├── background.py
-│ │ ├── face_detection.py
-│ │ ├── postprocess.py
-│ │ ├── preprocessing.py
-│ │ └── validation.py
 
 
 ---
@@ -53,22 +36,22 @@ eeproject/
 ## ⚙️ Installation & Setup  
 
 ### 1️⃣ Clone the repository  
-```bash
+
 git clone https://github.com/rutvik025/Anime-effects-on-human-face.git
 cd Anime-effects-on-human-face.
 
 
 ### 2️⃣ Create a virtual environment
-```bash
+
 python -m venv venv
 source venv/bin/activate   # On Windows use venv\Scripts\activate
 
 ### 3️⃣ Install dependencies
-```bash
+
 pip install -r requirements.txt
 
 ### ▶️ Run the Application
-```bash
+
 Start the Streamlit app:
 streamlit run streamlit_app.py
 
